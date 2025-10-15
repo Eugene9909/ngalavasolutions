@@ -47,7 +47,7 @@ function updateFleetSlider() {
 setInterval(() => {
   fleetCurrentIndex = (fleetCurrentIndex + 1) % fleetSlides.length;
   updateFleetSlider();
-}, 5000);
+}, 3000);
 // Dot navigation
 fleetDots.forEach((dot, index) => {
   dot.addEventListener('click', () => {
@@ -77,7 +77,7 @@ teamDots.forEach((dot, index) => {
 setInterval(() => {
   teamCurrentIndex = (teamCurrentIndex + 1) % teamSlides.length;
   updateTeamSlider();
-}, 5000);
+}, 3000);
 
 // Truck Slider
 const truckTrack = document.querySelector('.truck-track');
@@ -95,7 +95,7 @@ function autoScrollTruck() {
   updateTruckSlider();
 }
 // Auto slide
-setInterval(autoScrollTruck, 5000);
+setInterval(autoScrollTruck, 3000);
 // Manual navigation
 truckDots.forEach((dot, index) => {
   dot.addEventListener('click', () => {
